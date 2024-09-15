@@ -149,7 +149,7 @@
       selectedSeries.value,
       selectedComics.value,
     )
-    totalPages.value = newCharacters.total
+    totalPages.value = Math.ceil(newCharacters.total / limit)
     characters.value = newCharacters.results
     loading.value = false
   }
@@ -175,10 +175,14 @@
   * The debounced function ensures that `fetchCharacters` is not called more frequently than once every 500 milliseconds,
   * even if multiple calls are made in quick succession. This helps in reducing the number of API requests and improves performance.
   */
-  const debouncedFetchCharacters = debounce(fetchCharacters, 500)
+  const debouncedFetchCharacters = debounce(() => {
+    currentPage.value = 1
+    fetchCharacters()
+  }, 500)
 
   onMounted(initfetchData)
   watch(searchCharacter, debouncedFetchCharacters)
   watch([currentPage, selectedComics, selectedSeries], fetchCharacters)
+  watch([selectedComics, selectedSeries], () => currentPage.value = 1)
 
 </script>

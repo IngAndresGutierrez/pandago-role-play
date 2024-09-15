@@ -3,7 +3,6 @@
 | [Live Demo of Pandago Role Play](https://pandago-role-play.vercel.app/) | [https://pandago-role-play.vercel.app/](https://pandago-role-play.vercel.app/) |
 | [View the Wireframe](https://wireframe.cc/Cgl61A) | [https://wireframe.cc/Cgl61A](https://wireframe.cc/Cgl61A) |
 
-
 ## 💡Run Application
 
 Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
@@ -43,6 +42,13 @@ To build your project for production, use:
 ```bash
 yarn build
 ```
+
+# Desktop
+<img width="945" alt="image" src="https://github.com/user-attachments/assets/24cf48fd-8b1b-4f38-86d0-733c85729d20">
+
+# Mobile
+<img width="212" alt="image" src="https://github.com/user-attachments/assets/50c68b5e-19da-4107-9b0b-bc79b5f67043">
+
 
 # Vuetify (Default)
 

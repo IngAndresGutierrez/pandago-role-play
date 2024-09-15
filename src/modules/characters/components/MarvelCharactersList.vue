@@ -23,6 +23,7 @@
           <v-select
             v-model="selectedComics"
             clearable
+            :disabled="selectedSeries"
             item-title="title"
             item-value="id"
             :items="comicsOptions"
@@ -38,6 +39,7 @@
           <v-select
             v-model="selectedSeries"
             clearable
+            :disabled="selectedComics"
             item-title="title"
             item-value="id"
             :items="seriesOptions"
@@ -135,6 +137,7 @@
   const seriesOptions = ref([])
   const comicsOptions = ref([])
 
+  /* Fetches a list of Marvel characters based on the current page, limit, search term, selected series, and selected comics. */
   const fetchCharacters = async () => {
     loading.value = true
 
@@ -167,6 +170,11 @@
     fetchSeries()
   }
 
+  /*
+  * Create a debounced version of the `fetchCharacters` function with a delay of 500 milliseconds.
+  * The debounced function ensures that `fetchCharacters` is not called more frequently than once every 500 milliseconds,
+  * even if multiple calls are made in quick succession. This helps in reducing the number of API requests and improves performance.
+  */
   const debouncedFetchCharacters = debounce(fetchCharacters, 500)
 
   onMounted(initfetchData)

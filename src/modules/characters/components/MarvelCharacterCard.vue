@@ -43,6 +43,7 @@
     },
   })
 
+  /* Navigates to the detailed view of the selected character. */
   const goToCharacterDetail = () => {
     if (props.character && props.character.id) {
       router.push(`/character/${props.character.id}`)

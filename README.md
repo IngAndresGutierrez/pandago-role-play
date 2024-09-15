@@ -1,4 +1,4 @@
-| ⚡Live Demo                                                | Website        |
+| ⚡Demo                                                | Website        |
 |---------------------------------------------------------------|----------------|
 | [Live demo](https://pandago-role-play.vercel.app/)                  | https://pandago-role-play.vercel.app/ |
 

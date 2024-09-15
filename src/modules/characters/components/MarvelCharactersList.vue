@@ -23,7 +23,7 @@
           <v-select
             v-model="selectedComics"
             clearable
-            :disabled="selectedSeries"
+            :disabled="Boolean(selectedSeries)"
             item-title="title"
             item-value="id"
             :items="comicsOptions"
@@ -39,7 +39,7 @@
           <v-select
             v-model="selectedSeries"
             clearable
-            :disabled="selectedComics"
+            :disabled="Boolean(selectedComics)"
             item-title="title"
             item-value="id"
             :items="seriesOptions"
@@ -141,7 +141,13 @@
   const fetchCharacters = async () => {
     loading.value = true
 
-    const offset = (currentPage.value - 1) * limit
+    let offset = (currentPage.value - 1) * limit
+
+    if (selectedSeries.value || selectedComics.value) {
+      offset = 0
+      currentPage.value = 1
+    }
+
     const newCharacters = await marvelService.getCharacters(
       offset,
       limit,
@@ -183,6 +189,5 @@
   onMounted(initfetchData)
   watch(searchCharacter, debouncedFetchCharacters)
   watch([currentPage, selectedComics, selectedSeries], fetchCharacters)
-  watch([selectedComics, selectedSeries], () => currentPage.value = 1)
 
 </script>

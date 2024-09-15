@@ -2,6 +2,7 @@
 |-----------------------------------------------|------------------------------------------------|
 | [Live Demo of Pandago Role Play](https://pandago-role-play.vercel.app/) | [https://pandago-role-play.vercel.app/](https://pandago-role-play.vercel.app/) |
 | [View the Wireframe](https://wireframe.cc/Cgl61A) | [https://wireframe.cc/Cgl61A](https://wireframe.cc/Cgl61A) |
+| Video                                             | [Ver demo](https://youtu.be/tYwyt6_q7DQ)
 
 ## 💡Run Application
 

@@ -1,0 +1,87 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MarvelCharacterDetail.vue > renders correctly 1`] = `
+<div
+  character="[object Object]"
+  class="v-container v-locale--is-ltr py-4"
+  data-v-7908485d=""
+>
+  <div
+    class="v-row justify-center"
+    data-v-7908485d=""
+  >
+    <div
+      class="v-col-md-8 v-col-12"
+      data-v-7908485d=""
+    >
+      <div
+        aria-label="Loading..."
+        aria-live="polite"
+        class="v-skeleton-loader v-theme--light mx-auto border"
+        data-v-7908485d=""
+        role="alert"
+        style="max-height: 400px; max-width: 400px;"
+      >
+        
+        
+        <div
+          class="v-skeleton-loader__bone v-skeleton-loader__image"
+        >
+          
+          
+        </div>
+        
+        
+        <div
+          class="v-skeleton-loader__bone v-skeleton-loader__article"
+        >
+          
+          
+          <div
+            class="v-skeleton-loader__bone v-skeleton-loader__heading"
+          >
+            
+            
+          </div>
+          
+          
+          <div
+            class="v-skeleton-loader__bone v-skeleton-loader__paragraph"
+          >
+            
+            
+            <div
+              class="v-skeleton-loader__bone v-skeleton-loader__text"
+            >
+              
+              
+            </div>
+            
+            
+            <div
+              class="v-skeleton-loader__bone v-skeleton-loader__text"
+            >
+              
+              
+            </div>
+            
+            
+            <div
+              class="v-skeleton-loader__bone v-skeleton-loader__text"
+            >
+              
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

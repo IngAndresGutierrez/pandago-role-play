@@ -71,4 +71,22 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    server: {
+      deps: {
+        inline: ['vuetify'],
+      },
+    },
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      include: [
+        'src/modules/**',
+      ],
+      exclude: [
+        'src/modules/common/components/AppFooter.vue',
+      ],
+    },
+  },
 })

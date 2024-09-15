@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MarvelCharacterDetailSeries.vue > renders correctly 1`] = `
+<div
+  character="[object Object]"
+  class="v-container v-locale--is-ltr py-4"
+  data-v-43de85d1=""
+>
+  <div
+    class="v-row justify-center"
+    data-v-43de85d1=""
+  >
+    <div
+      class="v-col v-col-12"
+      data-v-43de85d1=""
+    >
+      <!--v-if-->
+      <!--v-if-->
+      <div
+        class="v-alert v-theme--light bg-info v-alert--density-default v-alert--variant-flat"
+        data-v-43de85d1=""
+        role="alert"
+      >
+        
+        <!---->
+        <span
+          class="v-alert__underlay"
+        />
+        
+        <!---->
+        <div
+          class="v-alert__prepend"
+        >
+          <i
+            aria-hidden="true"
+            class="mdi-information mdi v-icon notranslate v-theme--light"
+            density="default"
+            style="font-size: 28px; height: 28px; width: 28px;"
+          />
+        </div>
+        <div
+          class="v-alert__content"
+        >
+          <!---->
+          <!---->
+          
+          Este personaje no aparece en ninguna serie.
+          
+        </div>
+        <!---->
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+`;

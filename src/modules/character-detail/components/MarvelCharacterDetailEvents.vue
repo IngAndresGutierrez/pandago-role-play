@@ -35,7 +35,7 @@
   const fetchCharacterDetailEvents = async () => {
     loading.value = true
 
-    if (route.params && 'id' in route.params) {
+    if (route && route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
       characterEvents.value = await marvelService.getCharacterDetailEvents(characterId)
     }

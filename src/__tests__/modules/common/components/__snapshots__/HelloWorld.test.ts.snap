@@ -1,0 +1,828 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HelloWorld.vue > renders correctly 1`] = `
+<div
+  class="v-container v-locale--is-ltr fill-height"
+>
+  <div
+    class="v-responsive align-centerfill-height mx-auto"
+    style="max-width: 900px;"
+  >
+    <div
+      class="v-responsive__sizer"
+    />
+    <!---->
+    <div
+      class="v-responsive__content"
+    >
+      
+      <div
+        class="v-responsive v-img v-img--booting mb-4"
+        style="height: 150px;"
+      >
+        <div
+          class="v-responsive__sizer"
+        />
+        
+        
+        <transition-stub
+          appear="true"
+          css="true"
+          name="fade-transition"
+          persisted="false"
+        >
+          <img
+            class="v-img__img v-img__img--contain"
+            src="/src/modules/common/assets/logo.png"
+            style="display: none;"
+          />
+        </transition-stub>
+        <transition-stub
+          appear="false"
+          css="true"
+          name="fade-transition"
+          persisted="false"
+        >
+          <!---->
+        </transition-stub>
+        <!---->
+        <!---->
+        <!---->
+        
+        
+        <!---->
+      </div>
+      <div
+        class="text-center"
+      >
+        <div
+          class="text-body-2 font-weight-light mb-n1"
+        >
+          Welcome to
+        </div>
+        <h1
+          class="text-h2 font-weight-bold"
+        >
+          Vuetify
+        </h1>
+      </div>
+      <div
+        class="py-4"
+      />
+      <div
+        class="v-row"
+      >
+        <div
+          class="v-col v-col-12"
+        >
+          <div
+            class="v-card v-theme--light text-surface-variant v-card--density-default rounded-lg v-card--variant-outlined py-4"
+          >
+            <div
+              class="v-card__image"
+            >
+              
+              <div
+                class="v-responsive v-img v-img--booting"
+              >
+                <div
+                  class="v-responsive__sizer"
+                />
+                
+                
+                <transition-stub
+                  appear="true"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <img
+                    class="v-img__img v-img__img--cover"
+                    src="https://cdn.vuetifyjs.com/docs/images/one/create/feature.png"
+                    style="object-position: top right; display: none;"
+                  />
+                </transition-stub>
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <!---->
+                </transition-stub>
+                <!---->
+                <!---->
+                <!---->
+                
+                
+                <!---->
+              </div>
+              
+            </div>
+            <div
+              class="v-card__loader"
+            >
+              <div
+                aria-hidden="true"
+                aria-valuemax="100"
+                aria-valuemin="0"
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                />
+                <div
+                  class="v-progress-linear__buffer"
+                  style="width: 0%;"
+                />
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <div
+                    class="v-progress-linear__indeterminate"
+                  >
+                    
+                    <div
+                      class="v-progress-linear__indeterminate long"
+                    />
+                    <div
+                      class="v-progress-linear__indeterminate short"
+                    />
+                    
+                  </div>
+                </transition-stub>
+                <!---->
+              </div>
+            </div>
+            <div
+              class="v-card-item"
+            >
+              <div
+                class="v-card-item__prepend"
+              >
+                
+                <!---->
+                <i
+                  aria-hidden="true"
+                  class="mdi-rocket-launch-outline mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                
+              </div>
+              <div
+                class="v-card-item__content"
+              >
+                <div
+                  class="v-card-title"
+                >
+                  
+                  <h2
+                    class="text-h5 font-weight-bold"
+                  >
+                    Get started
+                  </h2>
+                  
+                </div>
+                <div
+                  class="v-card-subtitle"
+                >
+                  
+                  <div
+                    class="text-subtitle-1"
+                  >
+                     Replace this page by removing 
+                    <div
+                      class="v-kbd"
+                    >
+                      &lt;HelloWorld /&gt;
+                    </div>
+                     in 
+                    <div
+                      class="v-kbd"
+                    >
+                      pages/index.vue
+                    </div>
+                    . 
+                  </div>
+                  
+                </div>
+                <!---->
+              </div>
+              <!---->
+            </div>
+            <!---->
+            
+            
+            <!---->
+            <!--teleport start-->
+            <div
+              class="v-overlay v-overlay--absolute v-overlay--active v-overlay--contained v-theme--light v-locale--is-ltr"
+              style="z-index: 2000; --v-overlay-opacity: .12;"
+            >
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="false"
+              >
+                <div
+                  class="v-overlay__scrim bg-primary"
+                />
+              </transition-stub>
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="true"
+              >
+                <div
+                  class="v-overlay__content"
+                >
+                  <!---->
+                </div>
+              </transition-stub>
+            </div>
+            <!--teleport end-->
+            
+            
+            <!---->
+            
+            <!---->
+            <span
+              class="v-card__underlay"
+            />
+            
+          </div>
+        </div>
+        <div
+          class="v-col v-col-6"
+        >
+          <a
+            class="v-card v-card--link v-theme--light text-surface-variant v-card--density-default rounded-lg v-card--variant-text py-4"
+            href="https://vuetifyjs.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <!---->
+            <div
+              class="v-card__loader"
+            >
+              <div
+                aria-hidden="true"
+                aria-valuemax="100"
+                aria-valuemin="0"
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                />
+                <div
+                  class="v-progress-linear__buffer"
+                  style="width: 0%;"
+                />
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <div
+                    class="v-progress-linear__indeterminate"
+                  >
+                    
+                    <div
+                      class="v-progress-linear__indeterminate long"
+                    />
+                    <div
+                      class="v-progress-linear__indeterminate short"
+                    />
+                    
+                  </div>
+                </transition-stub>
+                <!---->
+              </div>
+            </div>
+            <div
+              class="v-card-item"
+            >
+              <div
+                class="v-card-item__prepend"
+              >
+                
+                <!---->
+                <i
+                  aria-hidden="true"
+                  class="mdi-text-box-outline mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                
+              </div>
+              <div
+                class="v-card-item__content"
+              >
+                <div
+                  class="v-card-title"
+                >
+                  Documentation
+                </div>
+                <div
+                  class="v-card-subtitle"
+                >
+                  Learn about all things Vuetify in our documentation.
+                </div>
+                <!---->
+              </div>
+              <div
+                class="v-card-item__append"
+              >
+                
+                <i
+                  aria-hidden="true"
+                  class="mdi-open-in-new mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                <!---->
+                
+              </div>
+            </div>
+            <!---->
+            
+            
+            <!---->
+            <!--teleport start-->
+            <div
+              class="v-overlay v-overlay--absolute v-overlay--active v-overlay--contained v-theme--light v-locale--is-ltr"
+              style="z-index: 2010; --v-overlay-opacity: .06;"
+            >
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="false"
+              >
+                <div
+                  class="v-overlay__scrim bg-primary"
+                />
+              </transition-stub>
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="true"
+              >
+                <div
+                  class="v-overlay__content"
+                >
+                  <!---->
+                </div>
+              </transition-stub>
+            </div>
+            <!--teleport end-->
+            
+            
+            <!---->
+            
+            <span
+              class="v-card__overlay"
+            />
+            <span
+              class="v-card__underlay"
+            />
+            
+          </a>
+        </div>
+        <div
+          class="v-col v-col-6"
+        >
+          <a
+            class="v-card v-card--link v-theme--light text-surface-variant v-card--density-default rounded-lg v-card--variant-text py-4"
+            href="https://vuetifyjs.com/introduction/why-vuetify/#feature-guides"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <!---->
+            <div
+              class="v-card__loader"
+            >
+              <div
+                aria-hidden="true"
+                aria-valuemax="100"
+                aria-valuemin="0"
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                />
+                <div
+                  class="v-progress-linear__buffer"
+                  style="width: 0%;"
+                />
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <div
+                    class="v-progress-linear__indeterminate"
+                  >
+                    
+                    <div
+                      class="v-progress-linear__indeterminate long"
+                    />
+                    <div
+                      class="v-progress-linear__indeterminate short"
+                    />
+                    
+                  </div>
+                </transition-stub>
+                <!---->
+              </div>
+            </div>
+            <div
+              class="v-card-item"
+            >
+              <div
+                class="v-card-item__prepend"
+              >
+                
+                <!---->
+                <i
+                  aria-hidden="true"
+                  class="mdi-star-circle-outline mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                
+              </div>
+              <div
+                class="v-card-item__content"
+              >
+                <div
+                  class="v-card-title"
+                >
+                  Features
+                </div>
+                <div
+                  class="v-card-subtitle"
+                >
+                  Explore available framework Features.
+                </div>
+                <!---->
+              </div>
+              <div
+                class="v-card-item__append"
+              >
+                
+                <i
+                  aria-hidden="true"
+                  class="mdi-open-in-new mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                <!---->
+                
+              </div>
+            </div>
+            <!---->
+            
+            
+            <!---->
+            <!--teleport start-->
+            <div
+              class="v-overlay v-overlay--absolute v-overlay--active v-overlay--contained v-theme--light v-locale--is-ltr"
+              style="z-index: 2020; --v-overlay-opacity: .06;"
+            >
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="false"
+              >
+                <div
+                  class="v-overlay__scrim bg-primary"
+                />
+              </transition-stub>
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="true"
+              >
+                <div
+                  class="v-overlay__content"
+                >
+                  <!---->
+                </div>
+              </transition-stub>
+            </div>
+            <!--teleport end-->
+            
+            
+            <!---->
+            
+            <span
+              class="v-card__overlay"
+            />
+            <span
+              class="v-card__underlay"
+            />
+            
+          </a>
+        </div>
+        <div
+          class="v-col v-col-6"
+        >
+          <a
+            class="v-card v-card--link v-theme--light text-surface-variant v-card--density-default rounded-lg v-card--variant-text py-4"
+            href="https://vuetifyjs.com/components/all"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <!---->
+            <div
+              class="v-card__loader"
+            >
+              <div
+                aria-hidden="true"
+                aria-valuemax="100"
+                aria-valuemin="0"
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                />
+                <div
+                  class="v-progress-linear__buffer"
+                  style="width: 0%;"
+                />
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <div
+                    class="v-progress-linear__indeterminate"
+                  >
+                    
+                    <div
+                      class="v-progress-linear__indeterminate long"
+                    />
+                    <div
+                      class="v-progress-linear__indeterminate short"
+                    />
+                    
+                  </div>
+                </transition-stub>
+                <!---->
+              </div>
+            </div>
+            <div
+              class="v-card-item"
+            >
+              <div
+                class="v-card-item__prepend"
+              >
+                
+                <!---->
+                <i
+                  aria-hidden="true"
+                  class="mdi-widgets-outline mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                
+              </div>
+              <div
+                class="v-card-item__content"
+              >
+                <div
+                  class="v-card-title"
+                >
+                  Components
+                </div>
+                <div
+                  class="v-card-subtitle"
+                >
+                  Discover components in the API Explorer.
+                </div>
+                <!---->
+              </div>
+              <div
+                class="v-card-item__append"
+              >
+                
+                <i
+                  aria-hidden="true"
+                  class="mdi-open-in-new mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                <!---->
+                
+              </div>
+            </div>
+            <!---->
+            
+            
+            <!---->
+            <!--teleport start-->
+            <div
+              class="v-overlay v-overlay--absolute v-overlay--active v-overlay--contained v-theme--light v-locale--is-ltr"
+              style="z-index: 2030; --v-overlay-opacity: .06;"
+            >
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="false"
+              >
+                <div
+                  class="v-overlay__scrim bg-primary"
+                />
+              </transition-stub>
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="true"
+              >
+                <div
+                  class="v-overlay__content"
+                >
+                  <!---->
+                </div>
+              </transition-stub>
+            </div>
+            <!--teleport end-->
+            
+            
+            <!---->
+            
+            <span
+              class="v-card__overlay"
+            />
+            <span
+              class="v-card__underlay"
+            />
+            
+          </a>
+        </div>
+        <div
+          class="v-col v-col-6"
+        >
+          <a
+            class="v-card v-card--link v-theme--light text-surface-variant v-card--density-default rounded-lg v-card--variant-text py-4"
+            href="https://discord.vuetifyjs.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <!---->
+            <div
+              class="v-card__loader"
+            >
+              <div
+                aria-hidden="true"
+                aria-valuemax="100"
+                aria-valuemin="0"
+                class="v-progress-linear v-theme--light v-locale--is-ltr"
+                role="progressbar"
+                style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"
+              >
+                <!---->
+                <div
+                  class="v-progress-linear__background"
+                />
+                <div
+                  class="v-progress-linear__buffer"
+                  style="width: 0%;"
+                />
+                <transition-stub
+                  appear="false"
+                  css="true"
+                  name="fade-transition"
+                  persisted="false"
+                >
+                  <div
+                    class="v-progress-linear__indeterminate"
+                  >
+                    
+                    <div
+                      class="v-progress-linear__indeterminate long"
+                    />
+                    <div
+                      class="v-progress-linear__indeterminate short"
+                    />
+                    
+                  </div>
+                </transition-stub>
+                <!---->
+              </div>
+            </div>
+            <div
+              class="v-card-item"
+            >
+              <div
+                class="v-card-item__prepend"
+              >
+                
+                <!---->
+                <i
+                  aria-hidden="true"
+                  class="mdi-account-group-outline mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                
+              </div>
+              <div
+                class="v-card-item__content"
+              >
+                <div
+                  class="v-card-title"
+                >
+                  Community
+                </div>
+                <div
+                  class="v-card-subtitle"
+                >
+                  Connect with Vuetify developers.
+                </div>
+                <!---->
+              </div>
+              <div
+                class="v-card-item__append"
+              >
+                
+                <i
+                  aria-hidden="true"
+                  class="mdi-open-in-new mdi v-icon notranslate v-theme--light v-icon--size-default"
+                  density="default"
+                />
+                <!---->
+                
+              </div>
+            </div>
+            <!---->
+            
+            
+            <!---->
+            <!--teleport start-->
+            <div
+              class="v-overlay v-overlay--absolute v-overlay--active v-overlay--contained v-theme--light v-locale--is-ltr"
+              style="z-index: 2040; --v-overlay-opacity: .06;"
+            >
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="false"
+              >
+                <div
+                  class="v-overlay__scrim bg-primary"
+                />
+              </transition-stub>
+              <transition-stub
+                appear="true"
+                css="true"
+                name="fade-transition"
+                persisted="true"
+              >
+                <div
+                  class="v-overlay__content"
+                >
+                  <!---->
+                </div>
+              </transition-stub>
+            </div>
+            <!--teleport end-->
+            
+            
+            <!---->
+            
+            <span
+              class="v-card__overlay"
+            />
+            <span
+              class="v-card__underlay"
+            />
+            
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;

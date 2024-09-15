@@ -7,7 +7,8 @@
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "test": "vitest -u",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "vitest --coverage",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
@@ -29,6 +30,7 @@
     "@vitest/coverage-v8": "^2.1.1",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.6",
+    "cypress": "^13.14.2",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-config-vuetify": "^1.0.0",

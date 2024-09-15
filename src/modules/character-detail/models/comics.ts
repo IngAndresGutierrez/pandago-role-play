@@ -1,8 +1,11 @@
 import { Thumbnail } from '@/modules/common/models/images'
 
-export interface Character {
+export interface Comic {
     id: number
-    name: string
+    title: string
     description: string
     thumbnail: Thumbnail
+    prices: {
+        price: string | number
+    }[]
 }

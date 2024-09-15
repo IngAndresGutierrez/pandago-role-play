@@ -32,17 +32,18 @@
   import { onMounted } from 'vue'
   import { useRoute } from 'vue-router'
 
+  import { Comic } from '../models/comics'
   import marvelService from '../services/character'
   import { getImageFromThumbnail } from '../../common/utils/images'
 
   const route = useRoute()
-  const characterComics = ref([])
+  const characterComics = ref<Comic[]>([])
   const loading = ref(false)
 
   const fetchCharacterDetailComics = async () => {
     loading.value = true
 
-    if (route.params.id) {
+    if (route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
       characterComics.value = await marvelService.getCharacterDetailComics(characterId)
     }

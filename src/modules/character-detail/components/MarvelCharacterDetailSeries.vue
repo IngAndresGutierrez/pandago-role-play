@@ -6,7 +6,7 @@
           <v-carousel-item v-for="(series, index) in characterSeries" :key="index">
             <h3 class="title">{{ series.title }}</h3>
             <v-card-text>{{ series.description }}</v-card-text>
-            <v-img :alt="series.title" height="350px" :src="getImageFromThumbnail(series.thumbnail)" />
+            <v-img :alt="series.title" height="350px" :src="series.thumbnail && getImageFromThumbnail(series.thumbnail)" />
           </v-carousel-item>
         </v-carousel>
         <v-container v-if="loading">
@@ -24,17 +24,18 @@
   import { onMounted } from 'vue'
   import { useRoute } from 'vue-router'
 
+  import { Serie } from '../models/series'
   import marvelService from '../services/character'
   import { getImageFromThumbnail } from '../../common/utils/images'
 
   const route = useRoute()
-  const characterSeries = ref([])
+  const characterSeries = ref<Serie[]>([])
   const loading = ref(false)
 
   const fetchCharacterDetailSeries = async () => {
     loading.value = true
 
-    if (route.params.id) {
+    if (route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
       characterSeries.value = await marvelService.getCharacterDetailSeries(characterId)
     }

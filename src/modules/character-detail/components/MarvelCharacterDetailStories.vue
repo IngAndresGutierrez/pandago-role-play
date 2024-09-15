@@ -24,7 +24,7 @@
             <v-progress-circular color="primary" indeterminate />
           </v-row>
         </v-container>
-        <v-alert v-if="!characterStories.length && !loading" type="info">Este personaje no aparece en ninguna
+        <v-alert v-if="!characterStories?.length && !loading" type="info">Este personaje no aparece en ninguna
           historia.</v-alert>
       </v-col>
     </v-row>
@@ -35,16 +35,17 @@
   import { onMounted } from 'vue'
   import { useRoute } from 'vue-router'
 
+  import { Story } from '../models/stories'
   import marvelService from '../services/character'
 
   const route = useRoute()
-  const characterStories = ref(null)
+  const characterStories = ref<Story[]>([])
   const loading = ref(false)
 
   const fetchCharacterDetailStories = async () => {
     loading.value = true
 
-    if (route.params.id) {
+    if (route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
       characterStories.value = await marvelService.getCharacterDetailStories(characterId)
     }

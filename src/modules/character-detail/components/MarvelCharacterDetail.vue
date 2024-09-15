@@ -70,27 +70,28 @@
   import { onMounted } from 'vue'
   import { useRoute, useRouter } from 'vue-router'
 
+  import { Character } from '../models/characters'
   import marvelService from '../services/character'
   import { getImageFromThumbnail } from '../../common/utils/images'
-  import MarvelCharacterDetailComics from './MarvelCharacterDetailComics'
-  import MarvelCharacterDetailSeries from './MarvelCharacterDetailSeries'
-  import MarvelCharacterDetailEvents from './MarvelCharacterDetailEvents'
-  import MarvelCharacterDetailStories from './MarvelCharacterDetailStories'
+  import MarvelCharacterDetailComics from './MarvelCharacterDetailComics.vue'
+  import MarvelCharacterDetailSeries from './MarvelCharacterDetailSeries.vue'
+  import MarvelCharacterDetailEvents from './MarvelCharacterDetailEvents.vue'
+  import MarvelCharacterDetailStories from './MarvelCharacterDetailStories.vue'
 
   const route = useRoute()
   const router = useRouter()
   const tab = ref('comics')
-  const character = ref(null)
+  const character = ref<Character | null>(null)
 
   const fetchCharacterDetail = async () => {
-    if (route.params.id) {
+    if (route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
       character.value = await marvelService.getCharacterDetail(characterId)
     }
   }
 
   const goBack = () => {
-    router.back(-1)
+    router.back()
   }
 
   onMounted(fetchCharacterDetail)

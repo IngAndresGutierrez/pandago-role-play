@@ -1,11 +1,14 @@
 export interface CharacterThumbnail {
-    path: string;
-    extension: string;
+    path: string
+    extension: string
 }
 
 export interface Character {
-    id: number;
-    name: string;
-    description: string;
-    thumbnail: CharacterThumbnail;
+    id: number
+    name: string
+    description: string
+    thumbnail: CharacterThumbnail
+    results: Object[]
+    total: number
+
 }

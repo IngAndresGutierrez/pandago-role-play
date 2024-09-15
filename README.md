@@ -3,6 +3,10 @@
 | [Live demo](https://pandago-role-play.vercel.app/)                  | https://pandago-role-play.vercel.app/ |
 
 
+| Wireframe                                                | [Link](https://wireframe.cc/Cgl61A)        |
+|---------------------------------------------------------------|----------------|
+
+
 ## 💿 Run Application
 
 Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:

@@ -2,8 +2,15 @@
   <v-container class="py-4">
     <v-row justify="center">
       <v-col cols="12" md="8">
-        <v-card v-if="character">
 
+        <v-alert v-if="errorFetch" class="mb-4" prominent type="warning">
+          Personaje no encontrado
+          <v-btn class="ml-4" color="primary" @click="goBack">
+            Regresar
+          </v-btn>
+        </v-alert>
+
+        <v-card v-if="character">
           <v-container>
             <v-row class="align-center">
               <v-col class="d-flex align-center" cols="2">
@@ -55,7 +62,7 @@
         </v-card>
 
         <v-skeleton-loader
-          v-else
+          v-if="!character && !errorFetch"
           class="mx-auto border"
           max-height="400"
           max-width="400"
@@ -82,11 +89,22 @@
   const router = useRouter()
   const tab = ref('comics')
   const character = ref<Character | null>(null)
+  const errorFetch = ref()
 
   const fetchCharacterDetail = async () => {
     if (route && route.params && 'id' in route.params) {
       const characterId = Number(route.params.id)
-      character.value = await marvelService.getCharacterDetail(characterId)
+
+      try {
+        const response = await marvelService.getCharacterDetail(characterId)
+        if (response) {
+          character.value = response
+        } else {
+          errorFetch.value = 'Personaje no encontrado'
+        }
+      } catch (err: any) {
+        errorFetch.value = err.message || 'Error al obtener el personaje'
+      }
     }
   }
 

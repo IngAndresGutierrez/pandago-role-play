@@ -5,7 +5,7 @@
 
         <v-alert v-if="errorFetch" class="mb-4" prominent type="warning">
           Personaje no encontrado
-          <v-btn class="ml-4" color="primary" @click="goBack">
+          <v-btn class="ml-4" color="primary" @click="goHome">
             Regresar
           </v-btn>
         </v-alert>
@@ -110,6 +110,10 @@
 
   const goBack = () => {
     router.back()
+  }
+
+  const goHome = () => {
+    router.push('/')
   }
 
   onMounted(fetchCharacterDetail)

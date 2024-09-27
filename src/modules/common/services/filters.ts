@@ -5,7 +5,7 @@ import { getQueryParamsApi } from '@/modules/common/utils/query-params'
 const BASE_URL = 'https://gateway.marvel.com/v1/public'
 
 const getSeries = async () => {
-  const url = `${BASE_URL}/series?${getQueryParamsApi()}&limit=50`
+  const url = `${BASE_URL}/series?${getQueryParamsApi()}&limit=10`
 
   try {
     const response = await axios.get(url)
@@ -17,7 +17,7 @@ const getSeries = async () => {
 }
 
 const getComics = async () => {
-  const url = `${BASE_URL}/comics?${getQueryParamsApi()}&limit=50`
+  const url = `${BASE_URL}/comics?${getQueryParamsApi()}&limit=10`
 
   try {
     const response = await axios.get(url)

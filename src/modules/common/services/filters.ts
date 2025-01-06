@@ -16,6 +16,7 @@ const getSeries = async () => {
   }
 }
 
+/* get comics */
 const getComics = async () => {
   const url = `${BASE_URL}/comics?${getQueryParamsApi()}&limit=10`
 
